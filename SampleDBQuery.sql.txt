@@ -1,0 +1,14 @@
+CREATE  TABLE  Nation(
+Order_NO NUMBER(2),
+NATION_ID VARCHAR2(10),
+NATION_NAME VARCHAR2(50),
+CONSTRAINT Nation_pk  PRIMARY KEY (Order_NO));
+
+
+INSERT INTO Nation VALUES (1, 'KOR','대한민국');
+INSERT INTO Nation VALUES (2, 'JPN','일본');
+INSERT INTO Nation VALUES (3, 'GBR','영국');
+INSERT INTO Nation VALUES (4, 'FRA','프랑스');
+INSERT INTO Nation VALUES (5, 'BRA','브라질');
+
+COMMIT;
