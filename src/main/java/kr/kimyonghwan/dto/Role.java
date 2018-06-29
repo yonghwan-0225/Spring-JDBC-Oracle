@@ -1,6 +1,7 @@
 package kr.kimyonghwan.dto;
 
 public class Role {
+	StringBuilder st = new StringBuilder();
 	private int Order_NO;
 	private String NATION_ID;
 	private String NATION_NAME;
@@ -24,7 +25,12 @@ public class Role {
 	}
 	@Override
 	public String toString() {
-		return "Role [Order_NO=" + Order_NO + ", NATION_ID=" + NATION_ID + ", NATION_NAME=" + NATION_NAME + "]";
+		st.append("Role : ");
+		st.append("[Order_NO] : ").append(Order_NO);
+		st.append(" [NATION_ID] : ").append(NATION_ID);
+		st.append(" [NATION_NAME] : ").append(NATION_NAME);
+		
+		return st.toString();
 	}
 
 }
