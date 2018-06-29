@@ -22,7 +22,7 @@ public class JDBCTest {
 		int count = roleDao.insert(role);
 		System.out.println(count + "건 입력하였습니다.");
 		
-		int count = roleDao.update(role);
+		int count2 = roleDao.update(role);
 		System.out.println(count + "건 수정하였습니다.");
 		
 		Role resultRole = roleDao.selectById(2);
