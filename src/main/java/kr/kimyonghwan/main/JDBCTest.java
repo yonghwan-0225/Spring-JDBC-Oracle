@@ -20,8 +20,7 @@ public class JDBCTest {
 		role.setNATION_NAME("한국짱");
 		
 		int count = roleDao.insert(role);
-		System.out.println(count + "건 입력하였습니다.");
-		
+		System.out.println(count + "건 입력하였습니다.");	
 		int count2 = roleDao.update(role);
 		System.out.println(count + "건 수정하였습니다.");
 		

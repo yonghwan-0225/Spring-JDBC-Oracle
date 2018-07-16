@@ -10,11 +10,11 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @Configuration
 @EnableTransactionManagement
 public class DBConfig {
-	private String driverClassName = "oracle.jdbc.driver.OracleDriver";
-	private String url = "jdbc:oracle:thin:@127.0.0.1:1521:orcl";
+	private String driverClassName = "com.mysql.jdbc.Driver";
+	private String url = "jdbc:mysql://localhost:3306/babukk?useUnicode=true&characterEncoding=utf8";
 	
-	private String username = "scott";
-	private String password = "tiger";
+	private String username = "babukk2";
+	private String password = "dydejrdl1";
 	
 	@Bean
 	public DataSource dataSource() {
